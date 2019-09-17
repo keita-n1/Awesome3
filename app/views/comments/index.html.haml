@@ -3,7 +3,8 @@
   %article#main
     %header#gbl_title
       #glb_title_container
-        
+        - breadcrumb :comment, @coordinate
+        = render 'layouts/breadcrumbs'
       #user_header
         .container
           .avatar
