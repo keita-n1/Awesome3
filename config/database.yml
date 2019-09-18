@@ -50,5 +50,7 @@ test:
 production:
   <<: *default
   database: Awesome3_production
-  username: Awesome3
-  password: <%= ENV['AWESOME3_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
+  
